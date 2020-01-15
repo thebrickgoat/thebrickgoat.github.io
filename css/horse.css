@@ -50,7 +50,8 @@ html {
 	cursor: url(/imgs/hands-02.png), auto;
 	position: fixed;
 	z-index: 2;
-	padding: 0
+	padding: 0;
+	text-align: center
 }
 
 .horsebackground {
@@ -85,7 +86,8 @@ html {
 	font-size: 4em;
 	-webkit-text-fill-color: rgba(255, 114, 107, 0);
 	-webkit-text-stroke-color: #000;
-	-webkit-text-stroke-width: 1px
+	-webkit-text-stroke-width: 1px;
+	margin: 5px;
 }
 
 .about h1,
@@ -188,16 +190,23 @@ section {
 	font-size: 6.3vw;
 	text-transform: uppercase;
 	width: auto;
-	COLOR: #ff726b;
+	COLOR: #ff726b;margin-bottom: 0;
 }
+.intro h2{
+	text-transform: uppercase;
+	width: auto;
+	color: #ff726b;
+    text-align: left;
+    margin: 0
 
+}
 .intro img {
-	margin-bottom: -15px
+	margin-bottom: -65px
 }
 
 .intro {
 	text-align: right;
-	background: #50b2bb;
+	background: #117bf0;
 	width: 100%;
 	padding: 0;
 }
@@ -242,9 +251,15 @@ section {
 	animation-timing-function: ease-in-out
 }
 
-.about,
 .about p {
-	text-align: center
+	text-align: center;
+	font-size: 4em;
+	color: #117bf0;
+	text-align: left;
+	font-weight: 700;
+	letter-spacing: 1px;
+	line-height: 1.5em;
+
 }
 
 .about {
@@ -264,7 +279,7 @@ section {
 
 .about h1 {
 	font-size: 5em;
-	color: #50b2bb;
+	color: #117bf0;
 	text-align: left;
 }
 
@@ -416,7 +431,8 @@ section {
 .grid-text h1 {
 	font-size: 2em;
 	color: #f2716b;
-	text-align: LEFT;
+	text-align: left;
+    letter-spacing: 3px;
 }
 
 .grid-text h3 {
@@ -425,7 +441,7 @@ section {
 	position: absolute;
 	bottom: 0;
 	left: 20px;
-	font-weight: 100;
+	font-weight: 100;letter-spacing: 6px;
 }
 
 .skills,
@@ -653,8 +669,45 @@ section {
 	background-color: currentColor;
 	font-size: 12px
 }
-
-@media screen and (max-width:600px) {
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+	from {
+	  -webkit-transform: rotate(0deg);
+	  -o-transform: rotate(0deg);
+	  transform: rotate(0deg);
+	}
+	to {
+	  -webkit-transform: rotate(360deg);
+	  -o-transform: rotate(360deg);
+	  transform: rotate(360deg);
+	}
+  }
+  @keyframes rotating {
+	from {
+	  -ms-transform: rotate(0deg);
+	  -moz-transform: rotate(0deg);
+	  -webkit-transform: rotate(0deg);
+	  -o-transform: rotate(0deg);
+	  transform: rotate(0deg);
+	}
+	to {
+	  -ms-transform: rotate(360deg);
+	  -moz-transform: rotate(360deg);
+	  -webkit-transform: rotate(360deg);
+	  -o-transform: rotate(360deg);
+	  transform: rotate(360deg);
+	}
+  }
+  .rotating {
+	margin: 8em 0;
+	width: 75%;
+	-webkit-animation: rotating 20s linear infinite;
+	-moz-animation: rotating 20s linear infinite;
+	-ms-animation: rotating 20s linear infinite;
+	-o-animation: rotating 20s linear infinite;
+	animation: rotating 20s linear infinite;
+	}
+  }
+@media screen and (max-width:1000px) {
 	.about h1,
 	.contact h1,
 	.horseslap h1,
