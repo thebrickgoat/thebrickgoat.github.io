@@ -71,22 +71,13 @@ function slideUp() {
     $('#contact').hide();
     $('#work').show();
     $('#horseslap').addClass('slideOutUp');
+    if ('scrollRestoration' in history) {
+        history.scrollRestoration = 'manual';
+    }
+    window.scrollTo(0, 0);
 
     //Animates
-    
-    var topY = document.getElementById('skill-container').offsetHeight - 100
-    var topX = document.getElementById('skill-container').offsetWidth - 200
-    var animate = function () {
-        $('.el').each(function () {
-            $(this).velocity({
-                top: "" + Math.floor(Math.random() * topY),
-                left: "" + Math.floor(Math.random() * topX)
-            }, "easeOut", 10000);
-        });
-        requestAnimationFrame(animate);
-    };
-    animate();
-    var squeak = "squeak.mp3"
+
     $('.el').on('click', function () {
         lowLag.play(squeak);
         var infoName = $(this).attr('data-attribute-name');
@@ -129,7 +120,6 @@ function slideUp() {
     AOS.init({
         duration: 700
     }
-
 
     );
 
