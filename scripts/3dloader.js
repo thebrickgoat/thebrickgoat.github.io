@@ -56,7 +56,7 @@ var animate = function () {
 var loader = new THREE.GLTFLoader();
 var root;
 
-loader.load( '/imgs/models/duck.gltf', function ( gltf ) {
+loader.load( '/imgs/models/DUCK.gltf', function ( gltf ) {
 	root = gltf.scene;	
 	scene.add( gltf.scene );
 	animate();
