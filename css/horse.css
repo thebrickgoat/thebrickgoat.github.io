@@ -208,7 +208,7 @@ section {
 }
 
 .threedText {
-	padding: 2em;
+	padding: 1em 2em;
 	width: auto;
 	position: absolute;
 	
@@ -299,7 +299,7 @@ section {
 
 .about {
 	background: #f2716b;
-	padding-bottom: 100px;
+	padding-bottom: 75px;
 	margin-top: 35em;
 	overflow: hidden;
 }
@@ -330,7 +330,7 @@ section {
 
 .about img{
 	position: absolute;
-	bottom: -53px;
+	bottom: -25px;
 	right: -50px;
  width: 39%;
 }
@@ -772,7 +772,7 @@ section {
 	.about img {
 		/* top:0; */
 		/* left:0; */
-		top: -113px;right: 0;width: 55%;
+		top: -113px;right: -25px;width: 55%;
 	}
 
 	.skills h2 {

@@ -25,8 +25,6 @@ scene.add(lights[1]);
 scene.add(lights[2]);
 
 camera.position.z = 10;
-camera.position.y = 1;
-camera.position.x = -3;
 
 var particle = new THREE.Object3D();
 
