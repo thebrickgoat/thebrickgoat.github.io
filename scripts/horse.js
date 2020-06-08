@@ -79,7 +79,6 @@ function slideUp() {
     //Animates
 
     $('.el').on('click', function () {
-        lowLag.play(squeak);
         var infoName = $(this).attr('data-attribute-name');
         var dislikes = $(this).attr('data-attribute-dislikes');
         var likes = $(this).attr('data-attribute-likes');
