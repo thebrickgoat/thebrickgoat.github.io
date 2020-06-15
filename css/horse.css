@@ -299,9 +299,10 @@ section {
 
 .about {
 	background: #f2716b;
-	padding-bottom: 75px;
-	margin-top: 95vh;
+	padding-bottom: 155px;
+	margin-top: 85vh;
 	overflow: hidden;
+	padding-top: 75px;
 }
 
 .about img {

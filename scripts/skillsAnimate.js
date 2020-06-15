@@ -51,7 +51,6 @@ var animateSkills = function () {
 
 $('.el').collide('.el', function (o, t) {
     if (o[0].id != t[0].id) {
-        console.log(o[0].id + ' collided with '+ o[0].id);
         $(o[0]).stop(function(){
             var oPosX = 1
             var oPosY = 1
