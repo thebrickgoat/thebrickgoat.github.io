@@ -289,9 +289,9 @@ section {
 .about p {
 	text-align: center;
 	font-size: 4em;
-	color: #117bf0;
+	color: #8400ff;
 	text-align: left;
-	font-weight: 500;
+	font-weight: 700;
 	letter-spacing: 1px;
 	line-height: 1.5em;
 
@@ -317,7 +317,7 @@ section {
 
 .about h1 {
 	font-size: 5vw;
-	color: #117bf0;
+	color: #8400ff;
 	text-align: left;width: 60%;
 }
 
