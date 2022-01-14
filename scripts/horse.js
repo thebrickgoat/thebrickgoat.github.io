@@ -10,21 +10,6 @@ lowLag.load("horse2.mp3");
 lowLag.load("horse0.mp3");
 lowLag.load("squeak.mp3");
 
-//animate.css extend function
-$.fn.extend({
-    animateCss: function (animationName, callback) {
-        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-        this.addClass('animated ' + animationName).one(animationEnd, function () {
-
-            $(this).removeClass('animated ' + animationName);
-            if (callback) {
-                callback();
-            }
-        });
-        return this;
-    }
-});
-
 //horsebase
 auth.signInAnonymously().catch(function (error) {
     var errorCode = error.code;
@@ -54,7 +39,6 @@ function userslap() {
     } else {
         globalslapnumber = globalslapnumber + 1
         var n = document.createTextNode('1');
-        $('#globalslaps').animateCss('pulse');
     }
 }
 
@@ -114,12 +98,5 @@ function slideUp() {
         speed: 300,
         allowTouchMove: false
     });
-
-    //Lazy Fades
-    AOS.init({
-        duration: 700
-    }
-
-    );
 
 }
